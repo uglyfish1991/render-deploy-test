@@ -1,0 +1,252 @@
+/* 
+// ========================================================================================================
+// General Stylings
+// ======================================================================================================== 
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+h1,h3{
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #AFBFC0;
+}
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+
+/* 
+// ========================================================================================================
+// Hero Header Stylings
+// ======================================================================================================== 
+*/
+
+header{
+  background-color: #828489;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  height:25vh;
+  text-align: center;
+  border-bottom: 20px solid #37383b;
+}
+
+header img{
+  height: 100%;
+}
+
+.heroRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heroContact{
+  background-color: rgb(242, 233, 243);
+  width: 57vw;
+  padding: 8px;
+  border-radius: 0px 0px 0px 20px;
+  color: rgb(95, 56, 91);
+  font-weight: 500;
+  box-shadow: 3px 1px 2px #66686c;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 5%;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(247, 208, 251);
+}
+
+/* 
+// ========================================================================================================
+// Main Page Cat of the Week
+// ======================================================================================================== 
+*/
+
+.weekContainer{
+  display: flex;
+}
+
+.catWeek {
+  height:60vh;
+  background-image: url('images/jeffers.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border-radius: 50px; */
+  margin-top: 2%;
+  padding-bottom: 5%;
+  box-shadow: 2px 2px 5px grey;
+  flex:2;
+
+}
+
+.catWeek h2{
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px 1px rgb(40, 40, 40);
+}
+
+.catWeek button{
+  padding: 20px;
+  font-size: 2rem;
+  border: 0px transparent;
+  background-color: rgb(95, 56, 91);
+  color: #e2e5ec;
+  box-shadow: 3px 3px 1px rgb(40, 40, 40);
+}
+
+.catWeek button:hover{
+  cursor: pointer;
+  background-color: rgb(124, 73, 119);
+  box-shadow: 3px 3px 1px rgb(29, 29, 29);
+}
+
+.catWeekInner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* 
+// ========================================================================================================
+// Cats
+// ======================================================================================================== 
+*/
+
+.catWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: space-around;
+}
+
+.cat-card{
+  position: relative;
+  margin: 1%;
+  width:30%;
+  height: 30vh;
+  border: 15px rgb(222, 222, 222) solid;
+  box-shadow: 2px 2px 3px grey;
+  overflow: hidden;
+}
+
+.cat-card img{
+  width:100%;
+  object-fit: cover;
+}
+
+.cat-card img:hover{
+opacity: 0.5;
+}
+
+.cat-content{
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width:70%;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 3px grey;
+
+}
+
+.cat-content p{
+  color:#37383b;
+  margin: 5px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cat-card button{
+  padding: 10px;
+  font-size: 1.3rem;
+  border: 0px transparent;
+  background-color: rgb(95, 56, 91);
+  color: #e2e5ec;
+  box-shadow: 3px 3px 1px rgb(40, 40, 40);
+}
+
+/* 
+// ========================================================================================================
+// Cat Modal
+// ======================================================================================================== 
+*/
+.modal{
+  background-color: rgb(243, 235, 235);
+  height:80vh;
+  width:80vw;
+  margin:auto;
+  margin-top:3%;
+  display: block;
+  border: 15px rgb(222, 222, 222) solid;
+  box-shadow: 3px 3px 8px grey;
+}
+
+.modal button{
+  margin: 1%;
+  font-size: 2em;
+  padding: 1%;
+  color:#37383b;
+  border: 3px rgb(222, 222, 222) solid;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.modal-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+.modal-cat-image{
+  height: 30vh;
+}
+
+/* 
+// ========================================================================================================
+// Footer
+// ======================================================================================================== 
+*/
+
+footer{
+  margin-top: 2%;
+  background-color: #828489;
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:25vh;
+  text-align: center;
+  border-top: 20px solid #37383b;
+}
+
